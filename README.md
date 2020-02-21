@@ -1,7 +1,8 @@
 # openssl-nodejs-promise
 
-Fork of the very excellent [openssl-nodejs](https://github.com/codevibess/openssl-nodejs)
-`openssl-node-js-promise` is a package which gives you a possibility to run every [OpenSSL](https://www.openssl.org/) command in [Node.js](https://nodejs.org/en/) in a handy way. Moreover, parameters like -in, -keyin, -config and etc can be replaced by a raw data ([Buffor](https://nodejs.org/dist/latest-v10.x/docs/api/buffer.html)).
+Fork of the most excellent [openssl-nodejs](https://github.com/codevibess/openssl-nodejs)
+#
+`openssl-node-js-promise` is a package which gives you a possibility to run every [OpenSSL](https://www.openssl.org/) command in [Node.js](https://nodejs.org/en/) in a handy way. Moreover, parameters like -in, -keyin, -config and etc can be replaced by a raw data ([Buffer](https://nodejs.org/dist/latest-v10.x/docs/api/buffer.html)).
 
 # Installation &amp; Usage
 
@@ -11,7 +12,7 @@ npm install openssl-nodejs-promise
 
 Import openssl module:
 ```javascript
-const openssl = require('openssl-nodejs')
+const openssl = require('openssl-nodejs-promise')
 openssl(cmd, options).then((res) => ...)
 ```
 
