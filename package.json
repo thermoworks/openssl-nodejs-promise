@@ -1,7 +1,7 @@
 {
   "name": "openssl-nodejs-promise",
   "version": "0.0.3",
-  "description": "",
+  "description": "Promisified openssl library",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,5 +32,14 @@
     "lambda"
   ],
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peteroreil/openssl-nodejs-promise.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/peteroreil/openssl-nodejs-promise/issues"
+  },
+  "homepage": "https://github.com/peteroreil/openssl-nodejs-promise#readme"
 }
