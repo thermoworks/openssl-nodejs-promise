@@ -1,6 +1,6 @@
 # openssl-nodejs-promise
 
-Fork of the most excellent [openssl-nodejs](https://github.com/codevibess/openssl-nodejs)
+Fork of [openssl-nodejs](https://github.com/codevibess/openssl-nodejs) by [codevibess](https://github.com/codevibess)
 #
 `openssl-node-js-promise` is a package which gives you a possibility to run every [OpenSSL](https://www.openssl.org/) command in [Node.js](https://nodejs.org/en/) in a handy way. Moreover, parameters like -in, -keyin, -config and etc can be replaced by a raw data ([Buffer](https://nodejs.org/dist/latest-v10.x/docs/api/buffer.html)).
 
@@ -51,12 +51,5 @@ Command example:
 openssl(['req', '-config', { name:'csr.conf', buffer: BufferVariable }, '-out', 'CSR.csr', '-new', '-newkey', 'rsa:2048', '-nodes', '-keyout', 'privateKey.key']);
 ```
 
-When you used a command which generates additional output in file format this package will create a folder openssl/ in the directory where the command was invoked. All output files will appear in this folder (openssl).
+When you used a command which generates additional output in file format this package will create a folder openssl/ in the directory where the command was invoked. All output files will appear in this folder (openssl). Te output directory location can be overridden via the `options`.
 
-Note: 
-> If u want to use a command which needs additional interaction use parameter -config and specify pass to file with configuration.
----
-That's all that you need to start using it.
-
-For any information, improvements or bug fixes please contact me.
-If it's package was useful for you please give a star in [GitHub](https://github.com/codevibess). (really inspiring me to new ones)
