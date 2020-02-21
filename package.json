@@ -1,14 +1,10 @@
 {
-  "name": "openssl-nodejs",
-  "version": "1.0.4",
+  "name": "openssl-nodejs-promise",
+  "version": "0.0.1",
   "description": "",
   "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/codevibess/openssl-nodejs"
   },
   "keywords": [
     "openssl",
@@ -31,8 +27,10 @@
     "pkcs12",
     "pkcs10",
     "ssl",
-    "tls"
+    "tls",
+    "aws",
+    "lambda"
   ],
-  "author": "codevibess",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
