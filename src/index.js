@@ -77,7 +77,7 @@ module.exports = function openssl(params, options = { dir: '' }) {
         });
 
         openSSLProcess.stderr.on('data', (data) => {
-            if (data.toString() !== 'read EC Key'){
+            if (data.toString() !== 'read EC key'){
                stderr.push(data)
             }
         });
