@@ -25,7 +25,6 @@ const checkDataTypeCompatibility = (params) => {
 module.exports = function openssl(params, options = { dir: '' }) {
     return new Promise((resolve, reject) => {
         const stdout = [];
-        const stderr = [];
         const dir = path.resolve(options.dir, 'openssl');
         let parameters = params
 
@@ -76,16 +75,8 @@ module.exports = function openssl(params, options = { dir: '' }) {
             stdout.push(data);
         });
 
-        openSSLProcess.stderr.on('data', (data) => {
-            if (!!data && data.toString().trim() !== 'read EC key' && data.toString().trim() !== 'writing EC key') {
-               stderr.push(data)
-            }
-        });
 
         openSSLProcess.on('close', (code) => {
-            if (stderr.length > 0) {
-                return reject(new Error(Buffer.concat(stderr)).toString())
-            }
             return resolve(Buffer.concat(stdout));
         });
 
